@@ -1,0 +1,70 @@
+auto slun
+auto real x, y, z, a, b, c, op
+auto real sp
+
+auto real pitch, yaw, roll
+
+
+yaw = -20
+pitch = 90
+roll = 0
+
+ATTACH (slun, 4) "SERIAL:1"
+
+SELECT ROBOT = 1
+ATTACH ()
+
+ENABLE SCALE.ACCEL[1]
+SPEED 10 ALWAYS
+READY
+DRIVE 3,90,10
+DRIVE 2,20,10
+DRIVE 5,-20,10
+ABOVE
+MOVE TRANS(500,50,150,-20,90,0)
+
+DISABLE SCALE.ACCEL[1]
+SPEED 100,100 MONITOR
+SPEED 100 ALWAYS
+ACCEL (1) 1000, 1000
+
+ABOVE
+
+WRITE (slun) "Ready"
+
+WHILE TRUE DO
+	READ (slun) op, sp, x, y, z
+	;TYPE "rec ", op,":",sp,"mmps, pos:",x, ",", y, ",", z, ",", a, ",", b, ",", c
+	IF IOSTAT(slun) < 0 THEN
+		TYPE IOSTAT(slun), " ", $ERROR(IOSTAT(slun))
+		TIMER 1 = 0
+		WAIT TIMER(1) > 1
+	END
+	CASE op OF
+	VALUE 1:
+		; straight line
+		SET loc = TRANS(x,y,z,yaw,pitch,roll)
+		;TYPE "SL"
+
+		if (x == 0) and (y == 0) and (z == 0) then
+			TYPE "gz"
+		end
+		sp=100
+		IF sp<1 THEN
+			sp=1
+		END
+		;TYPE "s",sp,"l", x, ",", y, ",", z
+		MOVES loc
+		IF INRANGE(loc) == 0 THEN
+
+			WRITE (slun) "K"
+		ELSE
+			TYPE "out of range"
+			WRITE (slun) "oor"
+		END
+	ANY
+		TYPE "unknown opcode"
+		WRITE (slun) "unknown opcode"
+	END
+
+END

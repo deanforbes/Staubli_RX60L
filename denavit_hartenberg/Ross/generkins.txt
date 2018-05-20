@@ -1,0 +1,48 @@
+#define DEFAULT_A1 0
+#define DEFAULT_ALPHA1 0
+#define DEFAULT_D1 0
+
+#define DEFAULT_A2 0
+#define DEFAULT_ALPHA2 -PI_2
+#define DEFAULT_D2 0
+
+#define DEFAULT_A3 400
+#define DEFAULT_ALPHA3 0
+#define DEFAULT_D3 49
+
+#define DEFAULT_A4 0
+#define DEFAULT_ALPHA4 PI_2
+#define DEFAULT_D4 400
+
+#define DEFAULT_A5 0
+#define DEFAULT_ALPHA5 -PI_2
+#define DEFAULT_D5 0
+
+#define DEFAULT_A6 0
+#define DEFAULT_ALPHA6 PI_2
+#define DEFAULT_D6 0
+
+
+setp genserkins.A-0 0
+setp genserkins.A-1 0
+setp genserkins.A-2 400
+setp genserkins.A-3 0
+setp genserkins.A-4 0
+setp genserkins.A-5 0
+
+setp genserkins.ALPHA-0 0 
+setp genserkins.ALPHA-1 -1.570796326 
+setp genserkins.ALPHA-2 0 
+setp genserkins.ALPHA-3 1.570796326 
+setp genserkins.ALPHA-4 -1.570796326 
+setp genserkins.ALPHA-5 1.570796326 
+
+setp genserkins.D-0 0
+setp genserkins.D-1 0
+setp genserkins.D-2 49
+setp genserkins.D-3 400
+setp genserkins.D-4 0 
+setp genserkins.D-5 0
+
+
+

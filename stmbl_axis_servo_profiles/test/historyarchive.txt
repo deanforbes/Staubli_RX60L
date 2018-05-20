@@ -1,0 +1,1255 @@
+
+???????
+
+term0:
+#pins: 28
+#ctx: 268 byte
+real #ctx: 268 byte
+*pins: 20006b1c byte
+*ctx: 20008b1c byte
+state: PRE_HW_INIT
+- rt_prio <= term0.rt_prio = 15.000000
+- frt_prio <= term0.frt_prio = 0.000000
+- wave0 <= term0.wave0 = 0.000000
+- wave1 <= term0.wave1 = 0.000000
+- wave2 <= term0.wave2 = 0.000000
+- wave3 <= term0.wave3 = 0.000000
+- wave4 <= term0.wave4 = 0.000000
+- wave5 <= term0.wave5 = 0.000000
+- wave6 <= term0.wave6 = 0.000000
+- wave7 <= term0.wave7 = 0.000000
+- offset0 <= term0.offset0 = 0.000000
+- offset1 <= term0.offset1 = 0.000000
+- offset2 <= term0.offset2 = 0.000000
+- offset3 <= term0.offset3 = 0.000000
+- offset4 <= term0.offset4 = 0.000000
+- offset5 <= term0.offset5 = 0.000000
+- offset6 <= term0.offset6 = 0.000000
+- offset7 <= term0.offset7 = 0.000000
+- gain0 <= term0.gain0 = 10.000000
+- gain1 <= term0.gain1 = 10.000000
+- gain2 <= term0.gain2 = 10.000000
+- gain3 <= term0.gain3 = 10.000000
+- gain4 <= term0.gain4 = 10.000000
+- gain5 <= term0.gain5 = 10.000000
+- gain6 <= term0.gain6 = 10.000000
+- gain7 <= term0.gain7 = 10.000000
+- send_step <= term0.send_step = 50.000000
+- con <= term0.con = 1.000000
+adc0:
+#pins: 29
+#ctx: 7692 byte
+real #ctx: 7692 byte
+*pins: 20006bfc byte
+*ctx: 20008c28 byte
+state: PRE_HW_INIT
+- rt_prio <= adc0.rt_prio = 1.000000
+- frt_prio <= adc0.frt_prio = 0.000000
+- sin <= adc0.sin = 0.005880
+- cos <= adc0.cos = 0.309210
+- sin3 <= adc0.sin3 = 0.027662
+- cos3 <= adc0.cos3 = 0.334313
+- quad <= adc0.quad = 1.000000
+- res_en <= adc0.res_en = 1.000000
+- sin_gain <= adc0.sin_gain = 2.000000
+- cos_gain <= adc0.cos_gain = 2.000000
+- sin_offset <= adc0.sin_offset = 0.000000
+- cos_offset <= adc0.cos_offset = 0.000000
+- send_step <= adc0.send_step = 0.000000
+- offset0 <= adc0.offset0 = 0.000000
+- offset1 <= adc0.offset1 = 0.000000
+- offset2 <= adc0.offset2 = 0.000000
+- offset3 <= adc0.offset3 = 0.000000
+- offset4 <= adc0.offset4 = 0.000000
+- offset5 <= adc0.offset5 = 0.000000
+- offset6 <= adc0.offset6 = 0.000000
+- offset7 <= adc0.offset7 = 0.000000
+- gain0 <= adc0.gain0 = 200.000000
+- gain1 <= adc0.gain1 = 200.000000
+- gain2 <= adc0.gain2 = 0.000000
+- gain3 <= adc0.gain3 = 0.000000
+- gain4 <= adc0.gain4 = 0.000000
+- gain5 <= adc0.gain5 = 0.000000
+- gain6 <= adc0.gain6 = 0.000000
+- gain7 <= adc0.gain7 = 0.000000
+reslimit0:
+#pins: 5
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20006ce4 byte
+*ctx: 2000aa34 byte
+state: PRE_HW_INIT
+- rt_prio <= reslimit0.rt_prio = 3.000000
+- frt_prio <= reslimit0.frt_prio = 0.000000
+- pos_in <= rev0.out = 0.000000
+- pos_out <= reslimit0.pos_out = 0.000000
+- res <= conf0.mot_fb_res = 16384.000000
+rev0:
+#pins: 7
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20006d0c byte
+*ctx: 2000aa34 byte
+state: PRE_HW_INIT
+- rt_prio <= rev0.rt_prio = 4.000000
+- frt_prio <= rev0.frt_prio = 0.000000
+- in <= rev0.in = 0.000000
+- out <= rev0.out = 0.000000
+- in_d <= vel0.vel = 0.000000
+- out_d <= rev0.out_d = 0.000000
+- rev <= conf0.cmd_rev = 0.000000
+rev1:
+#pins: 7
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20006d44 byte
+*ctx: 2000aa34 byte
+state: PRE_HW_INIT
+- rt_prio <= rev1.rt_prio = 4.000000
+- frt_prio <= rev1.frt_prio = 0.000000
+- in <= res0.pos = 0.019410
+- out <= rev1.out = 0.017103
+- in_d <= vel1.vel = 0.000000
+- out_d <= rev1.out_d = 0.000000
+- rev <= conf0.mot_fb_rev = 0.000000
+rev2:
+#pins: 7
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20006d7c byte
+*ctx: 2000aa34 byte
+state: PRE_HW_INIT
+- rt_prio <= rev2.rt_prio = 4.000000
+- frt_prio <= rev2.frt_prio = 0.000000
+- in <= rev2.in = 0.000000
+- out <= rev2.out = 0.000000
+- in_d <= vel2.vel = 0.000000
+- out_d <= rev2.out_d = 0.000000
+- rev <= conf0.com_fb_rev = 0.000000
+rev3:
+#pins: 7
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20006db4 byte
+*ctx: 2000aa34 byte
+state: PRE_HW_INIT
+- rt_prio <= rev3.rt_prio = 4.000000
+- frt_prio <= rev3.frt_prio = 0.000000
+- in <= rev3.in = 0.000000
+- out <= rev3.out = 0.000000
+- in_d <= rev3.in_d = 0.000000
+- out_d <= rev3.out_d = 0.000000
+- rev <= conf0.joint_fb_rev = 0.000000
+fb_switch0:
+#pins: 29
+#ctx: 12 byte
+real #ctx: 12 byte
+*pins: 20006dec byte
+*ctx: 2000aa34 byte
+state: PRE_HW_INIT
+- rt_prio <= fb_switch0.rt_prio = 5.000000
+- frt_prio <= fb_switch0.frt_prio = 0.000000
+- polecount <= conf0.polecount = 2.000000
+- pos_fb <= fb_switch0.pos_fb = 0.000155
+- vel_fb <= fb_switch0.vel_fb = 0.017454
+- com_fb <= fb_switch0.com_fb = 0.000000
+- joint_fb <= fb_switch0.joint_fb = 0.000000
+- state <= fb_switch0.state = 0.000000
+- cmd_pos <= reslimit0.pos_out = 0.000000
+- mot_pos <= rev1.out = 0.017333
+- mot_abs_pos <= rev1.out = 0.017333
+- mot_polecount <= conf0.mot_fb_polecount = 1.000000
+- mot_offset <= conf0.mot_fb_offset = 0.000000
+- mot_state <= fb_switch0.mot_state = 3.000000
+- com_pos <= rev2.out = 0.000000
+- com_abs_pos <= fb_switch0.com_abs_pos = 0.000000
+- com_polecount <= conf0.com_fb_polecount = 1.000000
+- com_offset <= conf0.com_fb_offset = 0.000000
+- com_state <= fb_switch0.com_state = 0.000000
+- joint_pos <= rev3.out = 0.000000
+- joint_abs_pos <= fb_switch0.joint_abs_pos = 0.000000
+- joint_offset <= conf0.joint_fb_offset = 0.000000
+- joint_state <= fb_switch0.joint_state = 0.000000
+- mot_joint_ratio <= fb_switch0.mot_joint_ratio = 0.000000
+- force_phase <= fb_switch0.force_phase = 0.000000
+- phase_time <= fb_switch0.phase_time = 0.000000
+- phase_cur <= fb_switch0.phase_cur = 0.000000
+- current_com_pos <= fb_switch0.current_com_pos = 0.000000
+- en <= fault0.en_pid = 0.000000
+vel0:
+#pins: 16
+#ctx: 12 byte
+real #ctx: 12 byte
+*pins: 20006ed4 byte
+*ctx: 2000aa40 byte
+state: PRE_HW_INIT
+- rt_prio <= vel0.rt_prio = 6.000000
+- frt_prio <= vel0.frt_prio = 0.000000
+- pos_in <= rev0.out = 0.000000
+- pos_out <= vel0.pos_out = 0.000000
+- vel <= vel0.vel = 0.000000
+- acc <= vel0.acc = 0.000000
+- w <= vel0.w = 1000.000000
+- d <= vel0.d = 0.900000
+- g <= vel0.g = 1.000000
+- h <= vel0.h = 1.000000
+- j <= vel0.j = 0.000010
+- lp <= vel0.lp = 50.000000
+- torque <= vel0.torque = 0.000000
+- vel_ff <= vel0.vel_ff = 0.000000
+- en <= fault0.en_pid = 0.000000
+- pos_error <= vel0.pos_error = 0.000000
+vel1:
+#pins: 16
+#ctx: 12 byte
+real #ctx: 12 byte
+*pins: 20006f54 byte
+*ctx: 2000aa4c byte
+state: PRE_HW_INIT
+- rt_prio <= vel1.rt_prio = 6.000000
+- frt_prio <= vel1.frt_prio = 0.000000
+- pos_in <= fb_switch0.vel_fb = 0.018577
+- pos_out <= vel1.pos_out = 0.018577
+- vel <= vel1.vel = 0.000000
+- acc <= vel1.acc = 0.000000
+- w <= vel1.w = 1000.000000
+- d <= vel1.d = 0.900000
+- g <= vel1.g = 1.000000
+- h <= vel1.h = 1.000000
+- j <= conf0.j = 0.000030
+- lp <= vel1.lp = 50.000000
+- torque <= pid0.torque_cor_cmd = 0.000000
+- vel_ff <= vel1.vel_ff = 0.000000
+- en <= fault0.en_pid = 0.000000
+- pos_error <= vel1.pos_error = 0.000000
+vel2:
+#pins: 16
+#ctx: 12 byte
+real #ctx: 12 byte
+*pins: 20006fd4 byte
+*ctx: 2000aa58 byte
+state: PRE_HW_INIT
+- rt_prio <= vel2.rt_prio = 6.000000
+- frt_prio <= vel2.frt_prio = 0.000000
+- pos_in <= fb_switch0.com_fb = 0.000000
+- pos_out <= vel2.pos_out = 0.000000
+- vel <= vel2.vel = 0.000000
+- acc <= vel2.acc = 0.000000
+- w <= vel2.w = 1000.000000
+- d <= vel2.d = 0.900000
+- g <= vel2.g = 1.000000
+- h <= vel2.h = 1.000000
+- j <= conf0.j = 0.000030
+- lp <= vel2.lp = 50.000000
+- torque <= pid0.torque_cor_cmd = 0.000000
+- vel_ff <= vel2.vel_ff = 0.000000
+- en <= fault0.en_pid = 0.000000
+- pos_error <= vel2.pos_error = 0.000000
+pid0:
+#pins: 40
+#ctx: 8 byte
+real #ctx: 8 byte
+*pins: 20007054 byte
+*ctx: 2000aa64 byte
+state: PRE_HW_INIT
+- rt_prio <= pid0.rt_prio = 8.000000
+- frt_prio <= pid0.frt_prio = 0.000000
+- pos_ext_cmd <= reslimit0.pos_out = 0.000000
+- pos_fb <= fb_switch0.pos_fb = -0.000220
+- pos_error <= pid0.pos_error = 0.000000
+- vel_ext_cmd <= vel0.vel = 0.000000
+- vel_fb <= vel1.vel = 0.000000
+- vel_cmd <= pid0.vel_cmd = 0.000000
+- vel_error <= pid0.vel_error = 0.000000
+- acc_ext_cmd <= pid0.acc_ext_cmd = 0.000000
+- acc_cmd <= pid0.acc_cmd = 0.000000
+- torque_ext_cmd <= pid0.torque_ext_cmd = 0.000000
+- torque_cmd <= pid0.torque_cmd = 0.000000
+- torque_cor_cmd <= pid0.torque_cor_cmd = 0.000000
+- torque_sum <= pid0.torque_sum = 0.000000
+- friction <= pid0.friction = 0.000000
+- damping <= pid0.damping = 0.000000
+- load <= pid0.load = 0.000000
+- enable <= fault0.en_pid = 0.000000
+- pos_en <= pid0.pos_en = 1.000000
+- vel_en <= pid0.vel_en = 1.000000
+- acc_en <= pid0.acc_en = 1.000000
+- torque_en <= pid0.torque_en = 1.000000
+- pos_p <= conf0.pos_p = 100.000000
+- vel_p <= conf0.vel_p = 2000.000000
+- vel_i <= conf0.vel_i = 5.000000
+- vel_g <= conf0.vel_g = 1.000000
+- acc_g <= pid0.acc_g = 1.000000
+- g <= conf0.g = 0.990000
+- j <= conf0.j = 0.000030
+- max_vel <= pmsm_limits0.abs_max_vel = 146.548309
+- max_torque <= pmsm_limits0.max_torque = 6.652199
+- min_torque <= pmsm_limits0.min_torque = -6.651133
+- max_usr_vel <= conf0.max_vel = 800.000000
+- max_usr_acc <= conf0.max_acc = 80000.000000
+- max_usr_torque <= conf0.max_force = 5.000000
+- vel_sat <= pid0.vel_sat = 0.000000
+- acc_sat <= pid0.acc_sat = 0.000000
+- torque_sat <= pid0.torque_sat = 0.000000
+- saturated <= pid0.saturated = 0.000000
+fault0:
+#pins: 46
+#ctx: 8 byte
+real #ctx: 8 byte
+*pins: 20007194 byte
+*ctx: 2000aa6c byte
+state: PRE_HW_INIT
+- rt_prio <= fault0.rt_prio = 10.000000
+- frt_prio <= fault0.frt_prio = 0.000000
+- en <= fault0.en = 0.000000
+- state <= fault0.state = 0.000000
+- fault <= fault0.fault = 0.000000
+- en_out <= fault0.en_out = 0.000000
+- en_pid <= fault0.en_pid = 0.000000
+- phase_start <= fault0.phase_start = 0.000000
+- phase_ready <= fault0.phase_ready = 0.000000
+- cmd <= fault0.cmd = 0.000000
+- fb <= fault0.fb = 0.000000
+- start_offset <= fault0.start_offset = 0.000000
+- cmd_error <= fault0.cmd_error = 0.000000
+- mot_fb_error <= res0.error = 0.000000
+- com_fb_error <= fault0.com_fb_error = 0.000000
+- joint_fb_error <= fault0.joint_fb_error = 0.000000
+- hv_error <= hv0.com_error = 0.000000
+- hv_temp <= hv0.hv_temp = 23.507446
+- mot_temp <= fault0.mot_temp = 0.000000
+- max_hv_temp <= conf0.max_hv_temp = 90.000000
+- max_mot_temp <= conf0.max_mot_temp = 100.000000
+- high_hv_temp <= conf0.high_hv_temp = 70.000000
+- high_mot_temp <= conf0.high_mot_temp = 0.000000
+- fan_hv_temp <= conf0.fan_hv_temp = 60.000000
+- fan_mot_temp <= conf0.fan_mot_temp = 0.000000
+- scale <= fault0.scale = 1.000000
+- dc_volt <= hv0.dc_volt = 29.398943
+- min_dc_volt <= fault0.min_dc_volt = 20.000000
+- high_dc_volt <= conf0.max_dc_volt = 380.000000
+- max_dc_volt <= conf0.max_dc_volt = 380.000000
+- dc_cur <= fault0.dc_cur = 0.000000
+- high_dc_cur <= fault0.high_dc_cur = 0.000000
+- max_dc_cur <= conf0.max_dc_cur = 15.000000
+- pos_error <= pid0.pos_error = 0.000000
+- max_pos_error <= conf0.max_pos_error = 1.500000
+- sat <= pid0.saturated = 0.000000
+- max_sat <= conf0.max_sat = 0.200000
+- mot_brake <= fault0.mot_brake = 0.000000
+- dc_brake <= fault0.dc_brake = 1.000000
+- hv_fan <= fault0.hv_fan = 0.000000
+- mot_fan <= fault0.mot_fan = 1.000000
+- phase_with_brake <= fault0.phase_with_brake = 1.000000
+- phase_on_start <= conf0.autophase = 0.000000
+- rephase <= fault0.rephase = 0.000000
+- print <= fault0.print = 0.000000
+- brake_release <= fault0.brake_release = 0.000000
+hv0:
+#pins: 36
+#ctx: 132 byte
+real #ctx: 132 byte
+*pins: 20007304 byte
+*ctx: 2000aa74 byte
+state: PRE_HW_INIT
+- rt_prio <= hv0.rt_prio = 11.000000
+- frt_prio <= hv0.frt_prio = 0.000000
+- d_cmd <= hv0.d_cmd = 0.000000
+- q_cmd <= pmsm_ttc0.cur = 0.000000
+- pos <= vel2.pos_out = 0.000000
+- vel <= vel2.vel = 0.000000
+- en <= fault0.en_out = 0.000000
+- mode <= hv0.mode = 1.000000
+- r <= conf0.r = 0.400000
+- l <= conf0.l = 0.002000
+- psi <= conf0.psi = 0.055000
+- cur_p <= conf0.cur_p = 0.200000
+- cur_i <= conf0.cur_i = 0.000100
+- cur_ff <= conf0.cur_ff = 0.000000
+- cur_ind <= conf0.cur_ind = 0.000000
+- max_y <= hv0.max_y = 0.000000
+- max_cur <= conf0.max_ac_cur = 17.000000
+- dc_volt <= hv0.dc_volt = 29.396168
+- d_fb <= hv0.d_fb = -0.122570
+- q_fb <= hv0.q_fb = 0.016174
+- hv_temp <= hv0.hv_temp = 23.477867
+- mot_temp <= hv0.mot_temp = 1003.686157
+- core_temp <= hv0.core_temp = 0.000000
+- fault <= hv0.fault = 0.000000
+- y <= hv0.y = 0.000000
+- u_fb <= hv0.u_fb = 7.588030
+- v_fb <= hv0.v_fb = 7.664882
+- w_fb <= hv0.w_fb = 7.595039
+- rev <= conf0.out_rev = 0.000000
+- com_error <= hv0.com_error = 0.000000
+- pwm_volt <= hv0.pwm_volt = 16.128294
+- uart_sr <= hv0.uart_sr = 208.000000
+- uart_dr <= hv0.uart_dr = 80.000000
+- crc_error <= hv0.crc_error = 0.000000
+- timeout <= hv0.timeout = 0.000000
+- scale <= fault0.scale = 1.000000
+iit0:
+#pins: 18
+#ctx: 4 byte
+real #ctx: 4 byte
+*pins: 20007424 byte
+*ctx: 2000aaf8 byte
+state: PRE_HW_INIT
+- rt_prio <= iit0.rt_prio = 12.000000
+- frt_prio <= iit0.frt_prio = 0.000000
+- brake_r <= iit0.brake_r = 50.000000
+- brake <= iit0.brake = 2.000000
+- air_temp <= iit0.air_temp = 20.000000
+- mot_air_res <= iit0.mot_air_res = 16.525448
+- mot_cap <= iit0.mot_cap = 18.153820
+- mot_tau <= iit0.mot_tau = 300.000000
+- mot_temp <= iit0.mot_temp = 377.858185
+- mot_max_temp <= iit0.mot_max_temp = 130.000000
+- mot_res <= iit0.mot_res = 1.000000
+- mot_psi <= iit0.mot_psi = 1.000000
+- mot_real_res <= iit0.mot_real_res = 2.431433
+- mot_real_psi <= iit0.mot_real_psi = 0.534784
+- mot_cont_cur <= iit0.mot_cont_cur = 2.150000
+- id <= iit0.id = 0.000000
+- iq <= iit0.iq = 0.000000
+- flow <= iit0.flow = 1.385025
+sim0:
+#pins: 14
+#ctx: 16 byte
+real #ctx: 16 byte
+*pins: 200074b4 byte
+*ctx: 2000aafc byte
+state: PRE_HW_INIT
+- rt_prio <= sim0.rt_prio = 13.000000
+- frt_prio <= sim0.frt_prio = 0.000000
+- amp <= sim0.amp = 3.100000
+- freq <= sim0.freq = 1.000000
+- sin <= sim0.sin = -2.304107
+- msin <= sim0.msin = -2.306710
+- sin2 <= sim0.sin2 = -0.367551
+- msin2 <= sim0.msin2 = -0.367960
+- sin3 <= sim0.sin3 = -0.058630
+- msin3 <= sim0.msin3 = -0.058690
+- square <= sim0.square = -3.099839
+- vel <= sim0.vel = -2.356369
+- res <= sim0.res = 100000.000000
+- offset <= sim0.offset = 0.000000
+stp0:
+#pins: 12
+#ctx: 20 byte
+real #ctx: 20 byte
+*pins: 20007524 byte
+*ctx: 2000ab0c byte
+state: PRE_HW_INIT
+- rt_prio <= stp0.rt_prio = 14.000000
+- frt_prio <= stp0.frt_prio = 0.000000
+- target <= stp0.target = 0.000000
+- pos <= stp0.pos = 0.000000
+- pos_in <= stp0.pos_in = 0.000000
+- pos_out <= stp0.pos_out = 0.000000
+- vel_in <= stp0.vel_in = 0.000000
+- vel_out <= stp0.vel_out = 0.000000
+- acc_out <= stp0.acc_out = 0.000000
+- max_vel <= stp0.max_vel = 0.000000
+- max_acc <= stp0.max_acc = 0.000000
+- dtg <= stp0.dtg = 0.000000
+io0:
+#pins: 34
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20007584 byte
+*ctx: 2000ab20 byte
+state: PRE_HW_INIT
+- rt_prio <= io0.rt_prio = 7.000000
+- frt_prio <= io0.frt_prio = 0.000000
+- fan <= fault0.hv_fan = 0.000000
+- state <= fault0.state = 0.000000
+- fault <= fault0.fault = 0.000000
+- brake <= io0.brake = 0.000000
+- out0 <= io0.out0 = 1.000000
+- out1 <= io0.out1 = 0.000000
+- out2 <= io0.out2 = 0.000000
+- in0 <= io0.in0 = 1.616162
+- in1 <= io0.in1 = 1.785351
+- ind0 <= io0.ind0 = 0.000000
+- ind1 <= io0.ind1 = 0.000000
+- CTX <= io0.CTX = 1.000000
+- CRX <= io0.CRX = 1.000000
+- DIO <= io0.DIO = 1.000000
+- CK <= io0.CK = 1.000000
+- fb0g <= io0.fb0g = 0.000000
+- fb0y <= io0.fb0y = 0.000000
+- fb1g <= io0.fb1g = 0.000000
+- fb1y <= io0.fb1y = 0.000000
+- cmdg <= io0.cmdg = 0.000000
+- cmdy <= io0.cmdy = 0.000000
+- io0 <= io0.io0 = 0.000000
+- io1 <= io0.io1 = 0.000000
+- fb0 <= io0.fb0 = 4.918579
+- fb1 <= io0.fb1 = 4.971753
+- fb0a <= io0.fb0a = 0.000000
+- fb0b <= io0.fb0b = 0.000000
+- fb0z <= io0.fb0z = 1.000000
+- fb1a <= io0.fb1a = 0.000000
+- fb1b <= io0.fb1b = 1.000000
+- fb1z <= io0.fb1z = 0.000000
+- fbsd <= io0.fbsd = 0.000000
+conf0:
+#pins: 54
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20007694 byte
+*ctx: 2000ab20 byte
+state: PRE_HW_INIT
+- rt_prio <= conf0.rt_prio = 0.000000
+- frt_prio <= conf0.frt_prio = 0.000000
+- r <= conf0.r = 0.400000
+- l <= conf0.l = 0.002000
+- j <= conf0.j = 0.000030
+- psi <= conf0.psi = 0.055000
+- polecount <= conf0.polecount = 2.000000
+- mot_type <= conf0.mot_type = 0.000000
+- out_rev <= conf0.out_rev = 0.000000
+- high_mot_temp <= conf0.high_mot_temp = 0.000000
+- max_mot_temp <= conf0.max_mot_temp = 100.000000
+- phase_time <= conf0.phase_time = 0.500000
+- phase_cur <= conf0.phase_cur = 1.000000
+- max_vel <= conf0.max_vel = 800.000000
+- max_acc <= conf0.max_acc = 80000.000000
+- max_force <= conf0.max_force = 5.000000
+- max_dc_cur <= conf0.max_dc_cur = 15.000000
+- max_ac_cur <= conf0.max_ac_cur = 17.000000
+- mot_fb_polecount <= conf0.mot_fb_polecount = 1.000000
+- mot_fb_offset <= conf0.mot_fb_offset = 0.000000
+- mot_fb_rev <= conf0.mot_fb_rev = 0.000000
+- mot_fb_res <= conf0.mot_fb_res = 16384.000000
+- joint_fb_polecount <= conf0.joint_fb_polecount = 1.000000
+- joint_fb_offset <= conf0.joint_fb_offset = 0.000000
+- joint_fb_rev <= conf0.joint_fb_rev = 0.000000
+- joint_fb_res <= conf0.joint_fb_res = 16384.000000
+- com_fb_polecount <= conf0.com_fb_polecount = 1.000000
+- com_fb_offset <= conf0.com_fb_offset = 0.000000
+- com_fb_rev <= conf0.com_fb_rev = 0.000000
+- com_fb_res <= conf0.com_fb_res = 16384.000000
+- autophase <= conf0.autophase = 0.000000
+- cmd_rev <= conf0.cmd_rev = 0.000000
+- cmd_res <= conf0.cmd_res = 16384.000000
+- pos_static <= conf0.pos_static = 0.000000
+- max_dc_volt <= conf0.max_dc_volt = 380.000000
+- max_hv_temp <= conf0.max_hv_temp = 90.000000
+- max_core_temp <= conf0.max_core_temp = 0.000000
+- max_pos_error <= conf0.max_pos_error = 1.500000
+- high_dc_volt <= conf0.high_dc_volt = 350.000000
+- low_dc_volt <= conf0.low_dc_volt = 24.000000
+- high_hv_temp <= conf0.high_hv_temp = 70.000000
+- fan_hv_temp <= conf0.fan_hv_temp = 60.000000
+- fan_core_temp <= conf0.fan_core_temp = 0.000000
+- fan_mot_temp <= conf0.fan_mot_temp = 0.000000
+- g <= conf0.g = 0.990000
+- pos_p <= conf0.pos_p = 100.000000
+- vel_p <= conf0.vel_p = 2000.000000
+- vel_i <= conf0.vel_i = 5.000000
+- vel_g <= conf0.vel_g = 1.000000
+- cur_p <= conf0.cur_p = 0.200000
+- cur_i <= conf0.cur_i = 0.000100
+- cur_ff <= conf0.cur_ff = 0.000000
+- cur_ind <= conf0.cur_ind = 0.000000
+- max_sat <= conf0.max_sat = 0.200000
+pmsm_limits0:
+#pins: 21
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20007844 byte
+*ctx: 2000ab20 byte
+state: PRE_HW_INIT
+- rt_prio <= pmsm_limits0.rt_prio = 7.000000
+- frt_prio <= pmsm_limits0.frt_prio = 0.000000
+- psi <= conf0.psi = 0.055000
+- r <= conf0.r = 0.400000
+- ld <= conf0.l = 0.002000
+- lq <= conf0.l = 0.002000
+- polecount <= conf0.polecount = 2.000000
+- ac_volt <= hv0.pwm_volt = 16.126747
+- next_max_cur <= pmsm_limits0.next_max_cur = 1.077084
+- next_max_torque <= pmsm_limits0.next_max_torque = 0.179369
+- next_min_cur <= pmsm_limits0.next_min_cur = -1.077605
+- next_min_torque <= pmsm_limits0.next_min_torque = -0.174800
+- max_cur <= pmsm_limits0.max_cur = 40.317940
+- max_torque <= pmsm_limits0.max_torque = 6.651356
+- min_cur <= pmsm_limits0.min_cur = -40.305134
+- min_torque <= pmsm_limits0.min_torque = -6.651802
+- abs_max_cur <= pmsm_limits0.abs_max_cur = 40.348152
+- abs_max_torque <= pmsm_limits0.abs_max_torque = 6.654443
+- abs_max_vel <= pmsm_limits0.abs_max_vel = 146.672302
+- iq <= hv0.q_fb = 0.010111
+- indq <= pmsm_limits0.indq = 0.000000
+pmsm_ttc0:
+#pins: 15
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 200078ec byte
+*ctx: 2000ab20 byte
+state: PRE_HW_INIT
+- rt_prio <= pmsm_ttc0.rt_prio = 9.000000
+- frt_prio <= pmsm_ttc0.frt_prio = 0.000000
+- psi <= conf0.psi = 0.055000
+- polecount <= conf0.polecount = 2.000000
+- ac <= pmsm_ttc0.ac = 0.000000
+- pc <= pmsm_ttc0.pc = 0.000000
+- nc <= pmsm_ttc0.nc = 1.000000
+- ae <= pmsm_ttc0.ae = 0.000000
+- pe <= pmsm_ttc0.pe = 0.000000
+- ne <= pmsm_ttc0.ne = 1.000000
+- pos <= pmsm_ttc0.pos = 0.000000
+- t <= pmsm_ttc0.t = 0.000000
+- g <= pmsm_ttc0.g = 0.000000
+- torque <= pid0.torque_cor_cmd = 0.000000
+- cur <= pmsm_ttc0.cur = 0.000000
+res0:
+#pins: 13
+#ctx: 8 byte
+real #ctx: 8 byte
+*pins: 20007964 byte
+*ctx: 2000ab20 byte
+state: STARTED
+- rt_prio <= res0.rt_prio = 2.000000
+- frt_prio <= res0.frt_prio = 0.000000
+- pos <= res0.pos = 0.017874
+- amp <= res0.amp = 0.308935
+- quad <= adc0.quad = 1.000000
+- poles <= conf0.mot_fb_polecount = 1.000000
+- vel <= rev1.out_d = 0.000000
+- sin <= adc0.sin = 0.005557
+- cos <= adc0.cos = 0.309041
+- enable <= res0.enable = 0.000000
+- error <= res0.error = 0.000000
+- error_n <= res0.error_n = 1.000000
+- tim_oc <= res0.tim_oc = 47.000000
+RAW Paste Data
+
+term0:
+#pins: 28
+#ctx: 268 byte
+real #ctx: 268 byte
+*pins: 20006b1c byte
+*ctx: 20008b1c byte
+state: PRE_HW_INIT
+- rt_prio <= term0.rt_prio = 15.000000
+- frt_prio <= term0.frt_prio = 0.000000
+- wave0 <= term0.wave0 = 0.000000
+- wave1 <= term0.wave1 = 0.000000
+- wave2 <= term0.wave2 = 0.000000
+- wave3 <= term0.wave3 = 0.000000
+- wave4 <= term0.wave4 = 0.000000
+- wave5 <= term0.wave5 = 0.000000
+- wave6 <= term0.wave6 = 0.000000
+- wave7 <= term0.wave7 = 0.000000
+- offset0 <= term0.offset0 = 0.000000
+- offset1 <= term0.offset1 = 0.000000
+- offset2 <= term0.offset2 = 0.000000
+- offset3 <= term0.offset3 = 0.000000
+- offset4 <= term0.offset4 = 0.000000
+- offset5 <= term0.offset5 = 0.000000
+- offset6 <= term0.offset6 = 0.000000
+- offset7 <= term0.offset7 = 0.000000
+- gain0 <= term0.gain0 = 10.000000
+- gain1 <= term0.gain1 = 10.000000
+- gain2 <= term0.gain2 = 10.000000
+- gain3 <= term0.gain3 = 10.000000
+- gain4 <= term0.gain4 = 10.000000
+- gain5 <= term0.gain5 = 10.000000
+- gain6 <= term0.gain6 = 10.000000
+- gain7 <= term0.gain7 = 10.000000
+- send_step <= term0.send_step = 50.000000
+- con <= term0.con = 1.000000
+adc0:
+#pins: 29
+#ctx: 7692 byte
+real #ctx: 7692 byte
+*pins: 20006bfc byte
+*ctx: 20008c28 byte
+state: PRE_HW_INIT
+- rt_prio <= adc0.rt_prio = 1.000000
+- frt_prio <= adc0.frt_prio = 0.000000
+- sin <= adc0.sin = 0.005880
+- cos <= adc0.cos = 0.309210
+- sin3 <= adc0.sin3 = 0.027662
+- cos3 <= adc0.cos3 = 0.334313
+- quad <= adc0.quad = 1.000000
+- res_en <= adc0.res_en = 1.000000
+- sin_gain <= adc0.sin_gain = 2.000000
+- cos_gain <= adc0.cos_gain = 2.000000
+- sin_offset <= adc0.sin_offset = 0.000000
+- cos_offset <= adc0.cos_offset = 0.000000
+- send_step <= adc0.send_step = 0.000000
+- offset0 <= adc0.offset0 = 0.000000
+- offset1 <= adc0.offset1 = 0.000000
+- offset2 <= adc0.offset2 = 0.000000
+- offset3 <= adc0.offset3 = 0.000000
+- offset4 <= adc0.offset4 = 0.000000
+- offset5 <= adc0.offset5 = 0.000000
+- offset6 <= adc0.offset6 = 0.000000
+- offset7 <= adc0.offset7 = 0.000000
+- gain0 <= adc0.gain0 = 200.000000
+- gain1 <= adc0.gain1 = 200.000000
+- gain2 <= adc0.gain2 = 0.000000
+- gain3 <= adc0.gain3 = 0.000000
+- gain4 <= adc0.gain4 = 0.000000
+- gain5 <= adc0.gain5 = 0.000000
+- gain6 <= adc0.gain6 = 0.000000
+- gain7 <= adc0.gain7 = 0.000000
+reslimit0:
+#pins: 5
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20006ce4 byte
+*ctx: 2000aa34 byte
+state: PRE_HW_INIT
+- rt_prio <= reslimit0.rt_prio = 3.000000
+- frt_prio <= reslimit0.frt_prio = 0.000000
+- pos_in <= rev0.out = 0.000000
+- pos_out <= reslimit0.pos_out = 0.000000
+- res <= conf0.mot_fb_res = 16384.000000
+rev0:
+#pins: 7
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20006d0c byte
+*ctx: 2000aa34 byte
+state: PRE_HW_INIT
+- rt_prio <= rev0.rt_prio = 4.000000
+- frt_prio <= rev0.frt_prio = 0.000000
+- in <= rev0.in = 0.000000
+- out <= rev0.out = 0.000000
+- in_d <= vel0.vel = 0.000000
+- out_d <= rev0.out_d = 0.000000
+- rev <= conf0.cmd_rev = 0.000000
+rev1:
+#pins: 7
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20006d44 byte
+*ctx: 2000aa34 byte
+state: PRE_HW_INIT
+- rt_prio <= rev1.rt_prio = 4.000000
+- frt_prio <= rev1.frt_prio = 0.000000
+- in <= res0.pos = 0.019410
+- out <= rev1.out = 0.017103
+- in_d <= vel1.vel = 0.000000
+- out_d <= rev1.out_d = 0.000000
+- rev <= conf0.mot_fb_rev = 0.000000
+rev2:
+#pins: 7
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20006d7c byte
+*ctx: 2000aa34 byte
+state: PRE_HW_INIT
+- rt_prio <= rev2.rt_prio = 4.000000
+- frt_prio <= rev2.frt_prio = 0.000000
+- in <= rev2.in = 0.000000
+- out <= rev2.out = 0.000000
+- in_d <= vel2.vel = 0.000000
+- out_d <= rev2.out_d = 0.000000
+- rev <= conf0.com_fb_rev = 0.000000
+rev3:
+#pins: 7
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20006db4 byte
+*ctx: 2000aa34 byte
+state: PRE_HW_INIT
+- rt_prio <= rev3.rt_prio = 4.000000
+- frt_prio <= rev3.frt_prio = 0.000000
+- in <= rev3.in = 0.000000
+- out <= rev3.out = 0.000000
+- in_d <= rev3.in_d = 0.000000
+- out_d <= rev3.out_d = 0.000000
+- rev <= conf0.joint_fb_rev = 0.000000
+fb_switch0:
+#pins: 29
+#ctx: 12 byte
+real #ctx: 12 byte
+*pins: 20006dec byte
+*ctx: 2000aa34 byte
+state: PRE_HW_INIT
+- rt_prio <= fb_switch0.rt_prio = 5.000000
+- frt_prio <= fb_switch0.frt_prio = 0.000000
+- polecount <= conf0.polecount = 2.000000
+- pos_fb <= fb_switch0.pos_fb = 0.000155
+- vel_fb <= fb_switch0.vel_fb = 0.017454
+- com_fb <= fb_switch0.com_fb = 0.000000
+- joint_fb <= fb_switch0.joint_fb = 0.000000
+- state <= fb_switch0.state = 0.000000
+- cmd_pos <= reslimit0.pos_out = 0.000000
+- mot_pos <= rev1.out = 0.017333
+- mot_abs_pos <= rev1.out = 0.017333
+- mot_polecount <= conf0.mot_fb_polecount = 1.000000
+- mot_offset <= conf0.mot_fb_offset = 0.000000
+- mot_state <= fb_switch0.mot_state = 3.000000
+- com_pos <= rev2.out = 0.000000
+- com_abs_pos <= fb_switch0.com_abs_pos = 0.000000
+- com_polecount <= conf0.com_fb_polecount = 1.000000
+- com_offset <= conf0.com_fb_offset = 0.000000
+- com_state <= fb_switch0.com_state = 0.000000
+- joint_pos <= rev3.out = 0.000000
+- joint_abs_pos <= fb_switch0.joint_abs_pos = 0.000000
+- joint_offset <= conf0.joint_fb_offset = 0.000000
+- joint_state <= fb_switch0.joint_state = 0.000000
+- mot_joint_ratio <= fb_switch0.mot_joint_ratio = 0.000000
+- force_phase <= fb_switch0.force_phase = 0.000000
+- phase_time <= fb_switch0.phase_time = 0.000000
+- phase_cur <= fb_switch0.phase_cur = 0.000000
+- current_com_pos <= fb_switch0.current_com_pos = 0.000000
+- en <= fault0.en_pid = 0.000000
+vel0:
+#pins: 16
+#ctx: 12 byte
+real #ctx: 12 byte
+*pins: 20006ed4 byte
+*ctx: 2000aa40 byte
+state: PRE_HW_INIT
+- rt_prio <= vel0.rt_prio = 6.000000
+- frt_prio <= vel0.frt_prio = 0.000000
+- pos_in <= rev0.out = 0.000000
+- pos_out <= vel0.pos_out = 0.000000
+- vel <= vel0.vel = 0.000000
+- acc <= vel0.acc = 0.000000
+- w <= vel0.w = 1000.000000
+- d <= vel0.d = 0.900000
+- g <= vel0.g = 1.000000
+- h <= vel0.h = 1.000000
+- j <= vel0.j = 0.000010
+- lp <= vel0.lp = 50.000000
+- torque <= vel0.torque = 0.000000
+- vel_ff <= vel0.vel_ff = 0.000000
+- en <= fault0.en_pid = 0.000000
+- pos_error <= vel0.pos_error = 0.000000
+vel1:
+#pins: 16
+#ctx: 12 byte
+real #ctx: 12 byte
+*pins: 20006f54 byte
+*ctx: 2000aa4c byte
+state: PRE_HW_INIT
+- rt_prio <= vel1.rt_prio = 6.000000
+- frt_prio <= vel1.frt_prio = 0.000000
+- pos_in <= fb_switch0.vel_fb = 0.018577
+- pos_out <= vel1.pos_out = 0.018577
+- vel <= vel1.vel = 0.000000
+- acc <= vel1.acc = 0.000000
+- w <= vel1.w = 1000.000000
+- d <= vel1.d = 0.900000
+- g <= vel1.g = 1.000000
+- h <= vel1.h = 1.000000
+- j <= conf0.j = 0.000030
+- lp <= vel1.lp = 50.000000
+- torque <= pid0.torque_cor_cmd = 0.000000
+- vel_ff <= vel1.vel_ff = 0.000000
+- en <= fault0.en_pid = 0.000000
+- pos_error <= vel1.pos_error = 0.000000
+vel2:
+#pins: 16
+#ctx: 12 byte
+real #ctx: 12 byte
+*pins: 20006fd4 byte
+*ctx: 2000aa58 byte
+state: PRE_HW_INIT
+- rt_prio <= vel2.rt_prio = 6.000000
+- frt_prio <= vel2.frt_prio = 0.000000
+- pos_in <= fb_switch0.com_fb = 0.000000
+- pos_out <= vel2.pos_out = 0.000000
+- vel <= vel2.vel = 0.000000
+- acc <= vel2.acc = 0.000000
+- w <= vel2.w = 1000.000000
+- d <= vel2.d = 0.900000
+- g <= vel2.g = 1.000000
+- h <= vel2.h = 1.000000
+- j <= conf0.j = 0.000030
+- lp <= vel2.lp = 50.000000
+- torque <= pid0.torque_cor_cmd = 0.000000
+- vel_ff <= vel2.vel_ff = 0.000000
+- en <= fault0.en_pid = 0.000000
+- pos_error <= vel2.pos_error = 0.000000
+pid0:
+#pins: 40
+#ctx: 8 byte
+real #ctx: 8 byte
+*pins: 20007054 byte
+*ctx: 2000aa64 byte
+state: PRE_HW_INIT
+- rt_prio <= pid0.rt_prio = 8.000000
+- frt_prio <= pid0.frt_prio = 0.000000
+- pos_ext_cmd <= reslimit0.pos_out = 0.000000
+- pos_fb <= fb_switch0.pos_fb = -0.000220
+- pos_error <= pid0.pos_error = 0.000000
+- vel_ext_cmd <= vel0.vel = 0.000000
+- vel_fb <= vel1.vel = 0.000000
+- vel_cmd <= pid0.vel_cmd = 0.000000
+- vel_error <= pid0.vel_error = 0.000000
+- acc_ext_cmd <= pid0.acc_ext_cmd = 0.000000
+- acc_cmd <= pid0.acc_cmd = 0.000000
+- torque_ext_cmd <= pid0.torque_ext_cmd = 0.000000
+- torque_cmd <= pid0.torque_cmd = 0.000000
+- torque_cor_cmd <= pid0.torque_cor_cmd = 0.000000
+- torque_sum <= pid0.torque_sum = 0.000000
+- friction <= pid0.friction = 0.000000
+- damping <= pid0.damping = 0.000000
+- load <= pid0.load = 0.000000
+- enable <= fault0.en_pid = 0.000000
+- pos_en <= pid0.pos_en = 1.000000
+- vel_en <= pid0.vel_en = 1.000000
+- acc_en <= pid0.acc_en = 1.000000
+- torque_en <= pid0.torque_en = 1.000000
+- pos_p <= conf0.pos_p = 100.000000
+- vel_p <= conf0.vel_p = 2000.000000
+- vel_i <= conf0.vel_i = 5.000000
+- vel_g <= conf0.vel_g = 1.000000
+- acc_g <= pid0.acc_g = 1.000000
+- g <= conf0.g = 0.990000
+- j <= conf0.j = 0.000030
+- max_vel <= pmsm_limits0.abs_max_vel = 146.548309
+- max_torque <= pmsm_limits0.max_torque = 6.652199
+- min_torque <= pmsm_limits0.min_torque = -6.651133
+- max_usr_vel <= conf0.max_vel = 800.000000
+- max_usr_acc <= conf0.max_acc = 80000.000000
+- max_usr_torque <= conf0.max_force = 5.000000
+- vel_sat <= pid0.vel_sat = 0.000000
+- acc_sat <= pid0.acc_sat = 0.000000
+- torque_sat <= pid0.torque_sat = 0.000000
+- saturated <= pid0.saturated = 0.000000
+fault0:
+#pins: 46
+#ctx: 8 byte
+real #ctx: 8 byte
+*pins: 20007194 byte
+*ctx: 2000aa6c byte
+state: PRE_HW_INIT
+- rt_prio <= fault0.rt_prio = 10.000000
+- frt_prio <= fault0.frt_prio = 0.000000
+- en <= fault0.en = 0.000000
+- state <= fault0.state = 0.000000
+- fault <= fault0.fault = 0.000000
+- en_out <= fault0.en_out = 0.000000
+- en_pid <= fault0.en_pid = 0.000000
+- phase_start <= fault0.phase_start = 0.000000
+- phase_ready <= fault0.phase_ready = 0.000000
+- cmd <= fault0.cmd = 0.000000
+- fb <= fault0.fb = 0.000000
+- start_offset <= fault0.start_offset = 0.000000
+- cmd_error <= fault0.cmd_error = 0.000000
+- mot_fb_error <= res0.error = 0.000000
+- com_fb_error <= fault0.com_fb_error = 0.000000
+- joint_fb_error <= fault0.joint_fb_error = 0.000000
+- hv_error <= hv0.com_error = 0.000000
+- hv_temp <= hv0.hv_temp = 23.507446
+- mot_temp <= fault0.mot_temp = 0.000000
+- max_hv_temp <= conf0.max_hv_temp = 90.000000
+- max_mot_temp <= conf0.max_mot_temp = 100.000000
+- high_hv_temp <= conf0.high_hv_temp = 70.000000
+- high_mot_temp <= conf0.high_mot_temp = 0.000000
+- fan_hv_temp <= conf0.fan_hv_temp = 60.000000
+- fan_mot_temp <= conf0.fan_mot_temp = 0.000000
+- scale <= fault0.scale = 1.000000
+- dc_volt <= hv0.dc_volt = 29.398943
+- min_dc_volt <= fault0.min_dc_volt = 20.000000
+- high_dc_volt <= conf0.max_dc_volt = 380.000000
+- max_dc_volt <= conf0.max_dc_volt = 380.000000
+- dc_cur <= fault0.dc_cur = 0.000000
+- high_dc_cur <= fault0.high_dc_cur = 0.000000
+- max_dc_cur <= conf0.max_dc_cur = 15.000000
+- pos_error <= pid0.pos_error = 0.000000
+- max_pos_error <= conf0.max_pos_error = 1.500000
+- sat <= pid0.saturated = 0.000000
+- max_sat <= conf0.max_sat = 0.200000
+- mot_brake <= fault0.mot_brake = 0.000000
+- dc_brake <= fault0.dc_brake = 1.000000
+- hv_fan <= fault0.hv_fan = 0.000000
+- mot_fan <= fault0.mot_fan = 1.000000
+- phase_with_brake <= fault0.phase_with_brake = 1.000000
+- phase_on_start <= conf0.autophase = 0.000000
+- rephase <= fault0.rephase = 0.000000
+- print <= fault0.print = 0.000000
+- brake_release <= fault0.brake_release = 0.000000
+hv0:
+#pins: 36
+#ctx: 132 byte
+real #ctx: 132 byte
+*pins: 20007304 byte
+*ctx: 2000aa74 byte
+state: PRE_HW_INIT
+- rt_prio <= hv0.rt_prio = 11.000000
+- frt_prio <= hv0.frt_prio = 0.000000
+- d_cmd <= hv0.d_cmd = 0.000000
+- q_cmd <= pmsm_ttc0.cur = 0.000000
+- pos <= vel2.pos_out = 0.000000
+- vel <= vel2.vel = 0.000000
+- en <= fault0.en_out = 0.000000
+- mode <= hv0.mode = 1.000000
+- r <= conf0.r = 0.400000
+- l <= conf0.l = 0.002000
+- psi <= conf0.psi = 0.055000
+- cur_p <= conf0.cur_p = 0.200000
+- cur_i <= conf0.cur_i = 0.000100
+- cur_ff <= conf0.cur_ff = 0.000000
+- cur_ind <= conf0.cur_ind = 0.000000
+- max_y <= hv0.max_y = 0.000000
+- max_cur <= conf0.max_ac_cur = 17.000000
+- dc_volt <= hv0.dc_volt = 29.396168
+- d_fb <= hv0.d_fb = -0.122570
+- q_fb <= hv0.q_fb = 0.016174
+- hv_temp <= hv0.hv_temp = 23.477867
+- mot_temp <= hv0.mot_temp = 1003.686157
+- core_temp <= hv0.core_temp = 0.000000
+- fault <= hv0.fault = 0.000000
+- y <= hv0.y = 0.000000
+- u_fb <= hv0.u_fb = 7.588030
+- v_fb <= hv0.v_fb = 7.664882
+- w_fb <= hv0.w_fb = 7.595039
+- rev <= conf0.out_rev = 0.000000
+- com_error <= hv0.com_error = 0.000000
+- pwm_volt <= hv0.pwm_volt = 16.128294
+- uart_sr <= hv0.uart_sr = 208.000000
+- uart_dr <= hv0.uart_dr = 80.000000
+- crc_error <= hv0.crc_error = 0.000000
+- timeout <= hv0.timeout = 0.000000
+- scale <= fault0.scale = 1.000000
+iit0:
+#pins: 18
+#ctx: 4 byte
+real #ctx: 4 byte
+*pins: 20007424 byte
+*ctx: 2000aaf8 byte
+state: PRE_HW_INIT
+- rt_prio <= iit0.rt_prio = 12.000000
+- frt_prio <= iit0.frt_prio = 0.000000
+- brake_r <= iit0.brake_r = 50.000000
+- brake <= iit0.brake = 2.000000
+- air_temp <= iit0.air_temp = 20.000000
+- mot_air_res <= iit0.mot_air_res = 16.525448
+- mot_cap <= iit0.mot_cap = 18.153820
+- mot_tau <= iit0.mot_tau = 300.000000
+- mot_temp <= iit0.mot_temp = 377.858185
+- mot_max_temp <= iit0.mot_max_temp = 130.000000
+- mot_res <= iit0.mot_res = 1.000000
+- mot_psi <= iit0.mot_psi = 1.000000
+- mot_real_res <= iit0.mot_real_res = 2.431433
+- mot_real_psi <= iit0.mot_real_psi = 0.534784
+- mot_cont_cur <= iit0.mot_cont_cur = 2.150000
+- id <= iit0.id = 0.000000
+- iq <= iit0.iq = 0.000000
+- flow <= iit0.flow = 1.385025
+sim0:
+#pins: 14
+#ctx: 16 byte
+real #ctx: 16 byte
+*pins: 200074b4 byte
+*ctx: 2000aafc byte
+state: PRE_HW_INIT
+- rt_prio <= sim0.rt_prio = 13.000000
+- frt_prio <= sim0.frt_prio = 0.000000
+- amp <= sim0.amp = 3.100000
+- freq <= sim0.freq = 1.000000
+- sin <= sim0.sin = -2.304107
+- msin <= sim0.msin = -2.306710
+- sin2 <= sim0.sin2 = -0.367551
+- msin2 <= sim0.msin2 = -0.367960
+- sin3 <= sim0.sin3 = -0.058630
+- msin3 <= sim0.msin3 = -0.058690
+- square <= sim0.square = -3.099839
+- vel <= sim0.vel = -2.356369
+- res <= sim0.res = 100000.000000
+- offset <= sim0.offset = 0.000000
+stp0:
+#pins: 12
+#ctx: 20 byte
+real #ctx: 20 byte
+*pins: 20007524 byte
+*ctx: 2000ab0c byte
+state: PRE_HW_INIT
+- rt_prio <= stp0.rt_prio = 14.000000
+- frt_prio <= stp0.frt_prio = 0.000000
+- target <= stp0.target = 0.000000
+- pos <= stp0.pos = 0.000000
+- pos_in <= stp0.pos_in = 0.000000
+- pos_out <= stp0.pos_out = 0.000000
+- vel_in <= stp0.vel_in = 0.000000
+- vel_out <= stp0.vel_out = 0.000000
+- acc_out <= stp0.acc_out = 0.000000
+- max_vel <= stp0.max_vel = 0.000000
+- max_acc <= stp0.max_acc = 0.000000
+- dtg <= stp0.dtg = 0.000000
+io0:
+#pins: 34
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20007584 byte
+*ctx: 2000ab20 byte
+state: PRE_HW_INIT
+- rt_prio <= io0.rt_prio = 7.000000
+- frt_prio <= io0.frt_prio = 0.000000
+- fan <= fault0.hv_fan = 0.000000
+- state <= fault0.state = 0.000000
+- fault <= fault0.fault = 0.000000
+- brake <= io0.brake = 0.000000
+- out0 <= io0.out0 = 1.000000
+- out1 <= io0.out1 = 0.000000
+- out2 <= io0.out2 = 0.000000
+- in0 <= io0.in0 = 1.616162
+- in1 <= io0.in1 = 1.785351
+- ind0 <= io0.ind0 = 0.000000
+- ind1 <= io0.ind1 = 0.000000
+- CTX <= io0.CTX = 1.000000
+- CRX <= io0.CRX = 1.000000
+- DIO <= io0.DIO = 1.000000
+- CK <= io0.CK = 1.000000
+- fb0g <= io0.fb0g = 0.000000
+- fb0y <= io0.fb0y = 0.000000
+- fb1g <= io0.fb1g = 0.000000
+- fb1y <= io0.fb1y = 0.000000
+- cmdg <= io0.cmdg = 0.000000
+- cmdy <= io0.cmdy = 0.000000
+- io0 <= io0.io0 = 0.000000
+- io1 <= io0.io1 = 0.000000
+- fb0 <= io0.fb0 = 4.918579
+- fb1 <= io0.fb1 = 4.971753
+- fb0a <= io0.fb0a = 0.000000
+- fb0b <= io0.fb0b = 0.000000
+- fb0z <= io0.fb0z = 1.000000
+- fb1a <= io0.fb1a = 0.000000
+- fb1b <= io0.fb1b = 1.000000
+- fb1z <= io0.fb1z = 0.000000
+- fbsd <= io0.fbsd = 0.000000
+conf0:
+#pins: 54
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20007694 byte
+*ctx: 2000ab20 byte
+state: PRE_HW_INIT
+- rt_prio <= conf0.rt_prio = 0.000000
+- frt_prio <= conf0.frt_prio = 0.000000
+- r <= conf0.r = 0.400000
+- l <= conf0.l = 0.002000
+- j <= conf0.j = 0.000030
+- psi <= conf0.psi = 0.055000
+- polecount <= conf0.polecount = 2.000000
+- mot_type <= conf0.mot_type = 0.000000
+- out_rev <= conf0.out_rev = 0.000000
+- high_mot_temp <= conf0.high_mot_temp = 0.000000
+- max_mot_temp <= conf0.max_mot_temp = 100.000000
+- phase_time <= conf0.phase_time = 0.500000
+- phase_cur <= conf0.phase_cur = 1.000000
+- max_vel <= conf0.max_vel = 800.000000
+- max_acc <= conf0.max_acc = 80000.000000
+- max_force <= conf0.max_force = 5.000000
+- max_dc_cur <= conf0.max_dc_cur = 15.000000
+- max_ac_cur <= conf0.max_ac_cur = 17.000000
+- mot_fb_polecount <= conf0.mot_fb_polecount = 1.000000
+- mot_fb_offset <= conf0.mot_fb_offset = 0.000000
+- mot_fb_rev <= conf0.mot_fb_rev = 0.000000
+- mot_fb_res <= conf0.mot_fb_res = 16384.000000
+- joint_fb_polecount <= conf0.joint_fb_polecount = 1.000000
+- joint_fb_offset <= conf0.joint_fb_offset = 0.000000
+- joint_fb_rev <= conf0.joint_fb_rev = 0.000000
+- joint_fb_res <= conf0.joint_fb_res = 16384.000000
+- com_fb_polecount <= conf0.com_fb_polecount = 1.000000
+- com_fb_offset <= conf0.com_fb_offset = 0.000000
+- com_fb_rev <= conf0.com_fb_rev = 0.000000
+- com_fb_res <= conf0.com_fb_res = 16384.000000
+- autophase <= conf0.autophase = 0.000000
+- cmd_rev <= conf0.cmd_rev = 0.000000
+- cmd_res <= conf0.cmd_res = 16384.000000
+- pos_static <= conf0.pos_static = 0.000000
+- max_dc_volt <= conf0.max_dc_volt = 380.000000
+- max_hv_temp <= conf0.max_hv_temp = 90.000000
+- max_core_temp <= conf0.max_core_temp = 0.000000
+- max_pos_error <= conf0.max_pos_error = 1.500000
+- high_dc_volt <= conf0.high_dc_volt = 350.000000
+- low_dc_volt <= conf0.low_dc_volt = 24.000000
+- high_hv_temp <= conf0.high_hv_temp = 70.000000
+- fan_hv_temp <= conf0.fan_hv_temp = 60.000000
+- fan_core_temp <= conf0.fan_core_temp = 0.000000
+- fan_mot_temp <= conf0.fan_mot_temp = 0.000000
+- g <= conf0.g = 0.990000
+- pos_p <= conf0.pos_p = 100.000000
+- vel_p <= conf0.vel_p = 2000.000000
+- vel_i <= conf0.vel_i = 5.000000
+- vel_g <= conf0.vel_g = 1.000000
+- cur_p <= conf0.cur_p = 0.200000
+- cur_i <= conf0.cur_i = 0.000100
+- cur_ff <= conf0.cur_ff = 0.000000
+- cur_ind <= conf0.cur_ind = 0.000000
+- max_sat <= conf0.max_sat = 0.200000
+pmsm_limits0:
+#pins: 21
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 20007844 byte
+*ctx: 2000ab20 byte
+state: PRE_HW_INIT
+- rt_prio <= pmsm_limits0.rt_prio = 7.000000
+- frt_prio <= pmsm_limits0.frt_prio = 0.000000
+- psi <= conf0.psi = 0.055000
+- r <= conf0.r = 0.400000
+- ld <= conf0.l = 0.002000
+- lq <= conf0.l = 0.002000
+- polecount <= conf0.polecount = 2.000000
+- ac_volt <= hv0.pwm_volt = 16.126747
+- next_max_cur <= pmsm_limits0.next_max_cur = 1.077084
+- next_max_torque <= pmsm_limits0.next_max_torque = 0.179369
+- next_min_cur <= pmsm_limits0.next_min_cur = -1.077605
+- next_min_torque <= pmsm_limits0.next_min_torque = -0.174800
+- max_cur <= pmsm_limits0.max_cur = 40.317940
+- max_torque <= pmsm_limits0.max_torque = 6.651356
+- min_cur <= pmsm_limits0.min_cur = -40.305134
+- min_torque <= pmsm_limits0.min_torque = -6.651802
+- abs_max_cur <= pmsm_limits0.abs_max_cur = 40.348152
+- abs_max_torque <= pmsm_limits0.abs_max_torque = 6.654443
+- abs_max_vel <= pmsm_limits0.abs_max_vel = 146.672302
+- iq <= hv0.q_fb = 0.010111
+- indq <= pmsm_limits0.indq = 0.000000
+pmsm_ttc0:
+#pins: 15
+#ctx: 0 byte
+real #ctx: 0 byte
+*pins: 200078ec byte
+*ctx: 2000ab20 byte
+state: PRE_HW_INIT
+- rt_prio <= pmsm_ttc0.rt_prio = 9.000000
+- frt_prio <= pmsm_ttc0.frt_prio = 0.000000
+- psi <= conf0.psi = 0.055000
+- polecount <= conf0.polecount = 2.000000
+- ac <= pmsm_ttc0.ac = 0.000000
+- pc <= pmsm_ttc0.pc = 0.000000
+- nc <= pmsm_ttc0.nc = 1.000000
+- ae <= pmsm_ttc0.ae = 0.000000
+- pe <= pmsm_ttc0.pe = 0.000000
+- ne <= pmsm_ttc0.ne = 1.000000
+- pos <= pmsm_ttc0.pos = 0.000000
+- t <= pmsm_ttc0.t = 0.000000
+- g <= pmsm_ttc0.g = 0.000000
+- torque <= pid0.torque_cor_cmd = 0.000000
+- cur <= pmsm_ttc0.cur = 0.000000
+res0:
+#pins: 13
+#ctx: 8 byte
+real #ctx: 8 byte
+*pins: 20007964 byte
+*ctx: 2000ab20 byte
+state: STARTED
+- rt_prio <= res0.rt_prio = 2.000000
+- frt_prio <= res0.frt_prio = 0.000000
+- pos <= res0.pos = 0.017874
+- amp <= res0.amp = 0.308935
+- quad <= adc0.quad = 1.000000
+- poles <= conf0.mot_fb_polecount = 1.000000
+- vel <= rev1.out_d = 0.000000
+- sin <= adc0.sin = 0.005557
+- cos <= adc0.cos = 0.309041
+- enable <= res0.enable = 0.000000
+- error <= res0.error = 0.000000
+- error_n <= res0.error_n = 1.000000
+- tim_oc <= res0.tim_oc = 47.000000
+                
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\

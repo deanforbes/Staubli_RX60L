@@ -1,0 +1,29 @@
+component wrist "A component to handle mixed wrist motions on a Staubli Robot";
+pin in float joint.5.angle-cmd;
+pin in float joint.6.angle-cmd;
+pin in float joint.5.velocity-cmd;
+pin in float joint.6.velocity-cmd;
+
+pin out float motor.5.position-cmd;
+pin out float motor.6.position-cmd;
+pin out float motor.5.velocity-cmd;
+pin out float motor.6.velocity-cmd;
+
+pin out float joint.5.angle-fb;
+pin out float joint.6.angle-fb;
+
+function _;
+
+license "GPL"
+
+author "andypugh";
+
+FUNCTION(_){
+motor.5.position-cmd = joint.5.angle-cmd + joint.6.angle-cmd;
+motor.6.position-cmd = joint.5.angle-cmd - joint.6.angle-cmd;
+motor.5.velocity-cmd = joint.5.velocity-cmd + joint.6.velocity-cmd;
+motor.6.velocity-cmd = joint.5.velocity-cmd - joint.6.velocity-cmd;
+
+
+
+
