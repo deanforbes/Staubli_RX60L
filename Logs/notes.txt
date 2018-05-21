@@ -1,0 +1,21 @@
+
+21.05.2018
+We had a go at firing up the Staubli arm and had some challenges, we could not get Linuxcnc to start up it was failing after appearing to load the mesa pins, The sequence of flashing lights indicates that the Mesa card has successfully been read by the software and the configuration loaded it gives the error message 
+
+./hm2-stepper.hal:32: Pin 'hm2_7i92.stl.0.0.pos_cmd' does not exist
+
+https://github.com/deanforbes/Staubli_RX60L/blob/master/Logs/IMG_3448a.jpg
+https://github.com/deanforbes/Staubli_RX60L/blob/master/Logs/IMG_3448b.jpg
+
+
+
+when we fired our arm up we were having some issues with the mesa card whilst we were looking at this the STMBL were giving 8 Blinks to be honest I got lost in looking at the mesa issue when I looked again at the STMBL's again it was now giving 10 blinks 
+
+so the question is what does 8 Blinks i.e HV board serial CRC Error mean and how do I fault find it and if 10 Blinks is HV Board over-temperature does it reset its self 
+
+The board have been powere off for a few day and Ross and I will either be looking at them on Wednessday or Friday this week 
+
+
+
+
+
