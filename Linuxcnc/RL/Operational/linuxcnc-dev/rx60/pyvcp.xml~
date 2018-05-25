@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pyvcp>
+<vbox>
+
+<hbox>
+<label><text>"Brake0"</text></label>
+<checkbutton>            
+<halpin>"brake0"</halpin>
+</checkbutton>
+</hbox>
+
+<hbox>
+<label><text>"Brake1"</text></label>
+<checkbutton>            
+<halpin>"brake1"</halpin>
+</checkbutton>
+</hbox>
+
+<hbox>
+<label><text>"Brake2"</text></label>
+<checkbutton>            
+<halpin>"brake2"</halpin>
+</checkbutton>
+</hbox>
+
+<hbox>
+<label><text>"reset sserial"</text></label>
+<button>  
+<text>"reset sserial:"</text>
+<halpin>"ssreset"</halpin>
+</button>
+</hbox>
+
+</vbox>
+</pyvcp>

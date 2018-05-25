@@ -1,0 +1,4 @@
+net j0brake <= pyvcp.brake0
+net j1brake <= pyvcp.brake1
+net j2brake <= pyvcp.brake2
+

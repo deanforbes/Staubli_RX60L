@@ -1,0 +1,28 @@
+;useable with sim config: puma.ini
+;This is a test plot nc program to be run on backplot
+;Author Rdp 21-Dec-2017
+
+
+g28.1
+g0 x600 y49 z300
+g1 x600 y49 z600 f400
+g1 x600 y49 z300
+g1 x200 y49 z300
+g1 x200 y49 z600
+g1 x200 y49 z300
+g1 x200 y349 z300
+g1 x200 y349 z600
+g1 x200 y349 z300
+g1 x600 y349 z300
+g1 x600 y349 z300
+g1 x600 y49 z300
+g1 x600 y349 z300
+g1 x600 y349 z600
+g1 x600 y49 z600
+g1 x200 y49 z600
+g1 x200 y349 z600
+g1 x600 y349 z600
+g28
+
+
+m2
