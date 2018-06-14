@@ -1,0 +1,92 @@
+# kinematics
+loadrt [KINS]KINEMATICS
+
+# motion controller, get name and thread periods from ini file
+loadrt [EMCMOT]EMCMOT servo_period_nsec=[EMCMOT]SERVO_PERIOD num_joints=[KINS]JOINTS
+
+# hostmot2 driver
+loadrt hostmot2
+
+# load low-level driver
+loadrt [HOSTMOT2](DRIVER) config=[HOSTMOT2](CONFIG)
+
+# load estop latch component
+loadrt estop_latch
+loadrt not
+
+# ################################################
+# THREADS
+# ################################################
+
+addf hm2_[HOSTMOT2](BOARD).0.read         servo-thread
+addf motion-command-handler               servo-thread
+addf motion-controller                    servo-thread
+# revel in the free time here from not having to run PID 
+addf hm2_[HOSTMOT2](BOARD).0.write        servo-thread
+addf estop-latch.0                        servo-thread
+addf not.0                                servo-thread
+
+# ######################################################
+# Axis-of-motion Specific Configs (not the GUI)
+# ######################################################
+net j0poscmd joint.0.motor-pos-cmd  => hm2_[HOSTMOT2](BOARD).0.stbl.0.0.pos_cmd
+net j0velcmd joint.0.vel-cmd        => hm2_[HOSTMOT2](BOARD).0.stbl.0.0.vel_cmd
+net j0posfb  joint.0.motor-pos-fb  <=  hm2_[HOSTMOT2](BOARD).0.stbl.0.0.pos_fb
+net j0enable joint.0.amp-enable-out => hm2_[HOSTMOT2](BOARD).0.stbl.0.0.enable
+net j0fault  joint.0.amp-fault-in  <=  hm2_[HOSTMOT2](BOARD).0.stbl.0.0.fault
+net j0index  joint.0.index-enable  <=> hm2_[HOSTMOT2](BOARD).0.stbl.0.0.index_enable
+net j0brake                         => hm2_[HOSTMOT2](BOARD).0.stbl.0.0.output_pins-03
+
+net j1poscmd joint.1.motor-pos-cmd  => hm2_[HOSTMOT2](BOARD).0.stbl.0.1.pos_cmd
+net j1velcmd joint.1.vel-cmd        => hm2_[HOSTMOT2](BOARD).0.stbl.0.1.vel_cmd
+net j1posfb  joint.1.motor-pos-fb  <=  hm2_[HOSTMOT2](BOARD).0.stbl.0.1.pos_fb
+net j1enable joint.1.amp-enable-out => hm2_[HOSTMOT2](BOARD).0.stbl.0.1.enable
+net j1fault  joint.1.amp-fault-in  <=  hm2_[HOSTMOT2](BOARD).0.stbl.0.1.fault
+net j1index  joint.1.index-enable  <=> hm2_[HOSTMOT2](BOARD).0.stbl.0.1.index_enable
+net j1brake                         => hm2_[HOSTMOT2](BOARD).0.stbl.0.1.output_pins-03
+
+net j2poscmd joint.2.motor-pos-cmd  => hm2_[HOSTMOT2](BOARD).0.stbl.0.2.pos_cmd
+net j2velcmd joint.2.vel-cmd        => hm2_[HOSTMOT2](BOARD).0.stbl.0.2.vel_cmd
+net j2posfb  joint.2.motor-pos-fb  <=  hm2_[HOSTMOT2](BOARD).0.stbl.0.2.pos_fb
+net j2enable joint.2.amp-enable-out => hm2_[HOSTMOT2](BOARD).0.stbl.0.2.enable
+net j2fault  joint.2.amp-fault-in  <=  hm2_[HOSTMOT2](BOARD).0.stbl.0.2.fault
+net j2index  joint.2.index-enable  <=> hm2_[HOSTMOT2](BOARD).0.stbl.0.2.index_enable
+net j2brake                         => hm2_[HOSTMOT2](BOARD).0.stbl.0.2.output_pins-03
+
+net j3poscmd joint.3.motor-pos-cmd  => hm2_[HOSTMOT2](BOARD).0.stbl.0.3.pos_cmd
+net j3velcmd joint.3.vel-cmd        => hm2_[HOSTMOT2](BOARD).0.stbl.0.3.vel_cmd
+net j3posfb  joint.3.motor-pos-fb  <=  hm2_[HOSTMOT2](BOARD).0.stbl.0.3.pos_fb
+net j3enable joint.3.amp-enable-out => hm2_[HOSTMOT2](BOARD).0.stbl.0.3.enable
+net j3fault  joint.3.amp-fault-in  <=  hm2_[HOSTMOT2](BOARD).0.stbl.0.3.fault
+net j3index  joint.3.index-enable  <=> hm2_[HOSTMOT2](BOARD).0.stbl.0.3.index_enable
+
+#net j4poscmd joint.4.motor-pos-cmd  => hm2_[HOSTMOT2](BOARD).0.stbl.0.4.pos_cmd
+#net j4velcmd joint.4.vel-cmd        => hm2_[HOSTMOT2](BOARD).0.stbl.0.4.vel_cmd
+#net j4posfb  joint.4.motor-pos-fb  <=  hm2_[HOSTMOT2](BOARD).0.stbl.0.4.pos_fb
+#net j4enable joint.4.amp-enable-out => hm2_[HOSTMOT2](BOARD).0.stbl.0.4.enable
+#net j4fault  joint.4.amp-fault-in  <=  hm2_[HOSTMOT2](BOARD).0.stbl.0.4.fault
+#net j4index  joint.4.index-enable  <=> hm2_[HOSTMOT2](BOARD).0.stbl.0.4.index_enable
+
+net j5poscmd joint.5.motor-pos-cmd  => hm2_[HOSTMOT2](BOARD).0.stbl.0.5.pos_cmd
+net j5velcmd joint.5.vel-cmd        => hm2_[HOSTMOT2](BOARD).0.stbl.0.5.vel_cmd
+net j5posfb  joint.5.motor-pos-fb  <=  hm2_[HOSTMOT2](BOARD).0.stbl.0.5.pos_fb
+net j5enable joint.5.amp-enable-out => hm2_[HOSTMOT2](BOARD).0.stbl.0.5.enable
+net j5fault  joint.5.amp-fault-in  <=  hm2_[HOSTMOT2](BOARD).0.stbl.0.5.fault
+net j5index  joint.5.index-enable  <=> hm2_[HOSTMOT2](BOARD).0.stbl.0.5.index_enable
+
+net ssrun not.0.out => hm2_7i92.0.sserial.port-0.run
+net ssrunn => not.0.in
+
+# ##################################################
+# Standard I/O Block - EStop, Etc
+# ##################################################
+
+# A basic estop loop that only includes the hostmot watchdog.
+net user-enable iocontrol.0.user-request-enable => estop-latch.0.reset
+net enable-latch estop-latch.0.ok-out => iocontrol.0.emc-enable-in
+net watchdog hm2_[HOSTMOT2](BOARD).0.watchdog.has_bit => estop-latch.0.fault-in
+
+# create signals for tool loading loopback
+net tool-prep-loop iocontrol.0.tool-prepare => iocontrol.0.tool-prepared
+net tool-change-loop iocontrol.0.tool-change => iocontrol.0.tool-changed
+
