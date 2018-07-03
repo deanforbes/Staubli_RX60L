@@ -1,5 +1,5 @@
-.
-Working files for use with LinuxCNC 2.8
+
+Working files for use with LinuxCNC 2.8. This will only work in simulation and requires hardware specific code adding to the HAL and possibly ini files (TBC).
 
 Place file staubliRX60Lgui in the 'bin' folder of your linuxcnc directory.
 Place all other files in linuxcnc/configs/sim/axis/vismach
