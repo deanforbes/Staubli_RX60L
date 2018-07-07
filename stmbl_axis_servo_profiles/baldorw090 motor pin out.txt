@@ -1,3 +1,8 @@
-pin a/b = blue blue/white
-pin c/d = orange orange/white
-pin e/f = green green/white
+pin a = blue 46.1
+pin b = blue/white 46.1
+
+pin c = orange/white 131.6
+pin d = orange 131.6
+
+pin e = green 131.6
+pin f = green/white 131.6
