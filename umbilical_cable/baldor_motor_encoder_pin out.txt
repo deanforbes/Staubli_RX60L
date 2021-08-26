@@ -10,3 +10,4 @@ pin d = White = orange = 2
 pin e = Blue  = green = 6 
 pin f = White = green/white = 3 
 
+Pair with lower resistance is the exciter coil
