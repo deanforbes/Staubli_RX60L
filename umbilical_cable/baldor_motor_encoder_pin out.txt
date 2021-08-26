@@ -1,8 +1,12 @@
-pin a = blue 46.1
-pin b = blue/white 46.1
+Servo motor connector pin // Colour of conductor out of connector // T568B Wire Colour // RJ45 Pin Number
 
-pin c = orange/white 131.6
-pin d = orange 131.6
 
-pin e = green 131.6
-pin f = green/white 131.6
+pin a = blue = blue = 4 
+pin b = white = blue/white = 5 
+
+pin c = Blue  = orange/white = 1 
+pin d = White = orange = 2 
+
+pin e = Blue  = green = 6 
+pin f = White = green/white = 3 
+
