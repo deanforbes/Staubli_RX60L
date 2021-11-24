@@ -1,8 +1,7 @@
-| Servo motor connector pin  | Colour of conductor out of connector |  T568B Wire Colour   |     RJ45 Pin Number   |     |     |     |
-| --- | --- |--- | --- | --- | --- |
-| pin a  |blue | blue |  4   |   |
-| gpin b | blue | blue/white |  5   |   |
-
+| Servo motor connector pin  | Colour of conductor out of connector | T568B Wire Colour | RJ45 Pin Number |  
+| --- | --- | --- | --- |
+| pin a  |blue | blue | 4 | 
+| gpin b | blue | blue/white | 5 | 
 
 
 
