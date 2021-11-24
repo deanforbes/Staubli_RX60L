@@ -1,0 +1,21 @@
+| Servo motor connector pin  | Colour of conductor out of connector |  T568B Wire Colour   |     RJ45 Pin Number   |     |     |     |
+| --- | --- |--- | --- | --- | --- |
+| pin a  |blue | blue |  4   |   |
+| gpin b | blue | blue/white |  5   |   |
+
+
+
+
+Servo motor connector pin // Colour of conductor out of connector // T568B Wire Colour // RJ45 Pin Number
+
+
+pin a = blue = blue = 4 
+pin b = white = blue/white = 5 
+
+pin c = Blue  = orange/white = 1 
+pin d = White = orange = 2 
+
+pin e = Blue  = green = 6 
+pin f = White = green/white = 3 
+
+Pair with lower resistance is the exciter coil
