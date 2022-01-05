@@ -11,3 +11,24 @@ pin e = Blue  = green = 6
 pin f = White = green/white = 3 
 
 Pair with lower resistance is the exciter coil
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Straight Through Cable
+RJ-45 PIN	EIA/TIA T568A Ethernet Patch Cable 
+
+1 Green / White 	
+2 Green 		
+3 Orange White 		
+4 Blue 
+5 Blue / White
+6 Orange 
+7 Brown / White 
+8 Brown 
+
+
+Male Plug with latch at the bottom No1 is is on the left 
+
+Femal Plug with latch at the bottom No1 is is on the right  
