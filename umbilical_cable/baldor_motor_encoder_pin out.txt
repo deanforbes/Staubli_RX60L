@@ -29,6 +29,6 @@ RJ-45 PIN	EIA/TIA T568A Ethernet Patch Cable
 8 Brown 
 
 
-Male Plug with latch at the bottom No1 is is on the left 
+Male Plug with latch at the bottom No1 is on the left 
 
-Femal Plug with latch at the bottom No1 is is on the right  
+Female Plug with latch at the bottom No1 is on the right  
